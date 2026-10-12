@@ -3107,3 +3107,280 @@ footer {
     font-size: 7px;
   }
 }
+/* Temporary identity exploration board: all five concepts visible together. */
+.logo-lab {
+  min-width: 0;
+  width: 100%;
+  background: #f0f1e7;
+  border: 1px solid #e0e4d4;
+  border-radius: 16px;
+  padding: 24px;
+}
+.logo-lab-header {
+  display: flex;
+  justify-content: space-between;
+  color: #8b977c;
+  font-size: 7px;
+  letter-spacing: 1.35px;
+  gap: 12px;
+}
+.logo-lab-header small {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.logo-feature {
+  height: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.concept-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #183e32;
+  width: 100%;
+}
+.concept-symbol {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+}
+.concept-wordmark {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  letter-spacing: -2px;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  display: inline-block;
+}
+.wordmark-e {
+  display: inline-block;
+  position: relative;
+}
+.wordmark-e:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 45%;
+  width: 5px;
+  height: 3px;
+  background: #f0f1e7;
+  transform: rotate(-20deg);
+}
+.wordmark-dot {
+  color: #8faa55;
+}
+.only-wordmark .concept-wordmark {
+  font-size: 51px;
+  letter-spacing: -3px;
+}
+.logo-feature > p {
+  font-size: 10px;
+  color: #8a977c;
+  margin-top: 16px;
+}
+.logo-choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+.logo-choices button {
+  border: 1px solid #dee4d2;
+  background: #f8f7f2;
+  border-radius: 8px;
+  padding: 11px 7px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  color: #183e32;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.logo-choices button[aria-pressed="true"] {
+  background: #e4eecb;
+  border-color: #8fab59;
+}
+.logo-choice-art {
+  height: 54px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.logo-choice-art .concept-symbol {
+  width: 43px;
+  height: 43px;
+}
+.logo-choice-art .concept-wordmark {
+  font-size: 19px;
+  letter-spacing: -1px;
+}
+.logo-choice-art .wordmark-e:after {
+  height: 2px;
+  width: 3px;
+  background: #f8f7f2;
+}
+.logo-choices button > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  margin-top: 7px;
+}
+.logo-choices button > span small {
+  font-size: 7px;
+  color: #95a080;
+}
+.logo-context {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid #dde4d0;
+  margin-top: 21px;
+  padding-top: 19px;
+}
+.concept-app-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 13px;
+  background: #183e32;
+  color: #d9ef8a;
+  flex-shrink: 0;
+}
+.concept-app-icon .concept-symbol {
+  height: 36px;
+  width: 36px;
+}
+.wordmark-app-icon .concept-wordmark {
+  font-size: 10px;
+  letter-spacing: -0.5px;
+  color: #d9ef8a;
+}
+.wordmark-app-icon .wordmark-e:after {
+  display: none;
+}
+.logo-context h3 {
+  font-size: 11px;
+  font-weight: 500;
+}
+.logo-context p {
+  font-size: 9px;
+  line-height: 1.8;
+  color: #869377;
+  margin-top: 4px;
+}
+.logo-lab-footer {
+  font-size: 7px;
+  color: #89967b;
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.logo-lab-footer span {
+  color: #a0a791;
+}
+@media (max-width: 1100px) {
+  .logo-lab {
+    padding: 20px;
+  }
+  .concept-wordmark {
+    font-size: 32px;
+  }
+  .concept-lockup .concept-symbol {
+    width: 48px;
+    height: 48px;
+  }
+  .logo-choices button > span {
+    font-size: 8px;
+    gap: 4px;
+  }
+  .logo-lab-footer {
+    font-size: 6px;
+  }
+}
+@media (max-width: 800px) {
+  .logo-lab {
+    padding: 17px;
+  }
+  .logo-lab-header {
+    font-size: 6px;
+    letter-spacing: 0.6px;
+  }
+  .concept-wordmark {
+    font-size: 25px;
+    letter-spacing: -1.6px;
+  }
+  .concept-lockup {
+    gap: 7px;
+  }
+  .concept-lockup .concept-symbol {
+    width: 41px;
+    height: 41px;
+  }
+  .logo-choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .logo-feature {
+    height: 150px;
+  }
+  .only-wordmark .concept-wordmark {
+    font-size: 37px;
+  }
+  .logo-lab-footer {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .logo-context p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .logo-lab {
+    margin-top: 36px;
+    padding: 22px 18px;
+  }
+  .logo-choices {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .concept-wordmark {
+    font-size: 32px;
+    letter-spacing: -1.9px;
+  }
+  .concept-lockup .concept-symbol {
+    width: 47px;
+    height: 47px;
+  }
+  .logo-context p {
+    font-size: 9px;
+  }
+  .logo-lab-header {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .logo-lab-footer {
+    font-size: 7px;
+  }
+  .logo-choice-art .concept-wordmark {
+    font-size: 17px;
+  }
+  .logo-choices button > span {
+    font-size: 8px;
+  }
+  .logo-feature {
+    height: 167px;
+  }
+}
+/* Approved Open S identity. */
+.site-logo-icon { width: 32px; height: 32px; display: block; flex-shrink: 0; margin-right: 2px; }
+.block-logo-icon { width: 20px; height: 20px; display: block; }
+.block-brand { gap: 6px; }
+@media (max-width: 600px) { .site-logo-icon { width: 29px; height: 29px; } }

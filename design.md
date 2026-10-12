@@ -15,3 +15,9 @@ Replace hero phone with a two-option visual selector: Day planner (default) and 
 
 ## Final hero direction — block screen concept
 User requested a crafted limit-reached screen, not an actual screenshot. Replace both comparison options with one minimal straight-on device showing a calm block state: YouTube paused, daily limit complete, “Your time is yours again.” Gain-first copy, forest background and lime action. No charts, planner, switch, cards floating around the device, or invented payment details. Mark as a concept preview below the device. The preview action demonstrates returning to an evening message locally, not a real device blocker. Other sections unchanged.
+
+## Logo exploration in hero
+User requests all five proposed logo options visible in hero for selection. Add a temporary comparison board in the right side: Open S, Time window, Pause, Unwinding, Wordmark. Draw crisp original SVG geometric marks in React, forest/ivory/lime only. Show all five selectable tiles and a selected larger lockup with app-icon treatment. Do not apply a concept to production nav/footer yet. Keep existing block-screen component intact for later restoration. No API changes.
+
+## Selected identity
+Open S selected by user: lime S with subtle darker terminal on a forest-green rounded square. Apply to header/footer and block-screen branding. SVG master, PNG app/touch icon, SVG favicon and multi-size ICO in web/public. Remove hero concept comparison and restore block-screen visual. No retheme or copy changes.

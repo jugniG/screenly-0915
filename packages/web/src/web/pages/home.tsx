@@ -22,11 +22,7 @@ import {
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#top" className={`logo ${light ? "light" : ""}`} aria-label="Screenly home">
-      <span className="logo-mark">
-        <i />
-        <i />
-        <i />
-      </span>
+      <img src="/images/screenly-logo.svg" className="site-logo-icon" width="32" height="32" alt="" />
       screenly<span className="logo-dot">.</span>
     </a>
   );

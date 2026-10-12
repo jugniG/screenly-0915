@@ -15,11 +15,7 @@ export default function HeroVisual() {
           </span>
         </div>
         <div className="block-brand">
-          <span className="block-brand-mark">
-            <i />
-            <i />
-            <i />
-          </span>
+          <img src="/images/screenly-logo.svg" className="block-logo-icon" width="20" height="20" alt="" />
           screenly.
         </div>
         <div className="block-screen-content" aria-live="polite">
