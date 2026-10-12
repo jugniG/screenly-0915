@@ -1,3 +1,4 @@
+import HeroVisual from "../components/hero-visual";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowUpRight,
@@ -16,10 +17,6 @@ import {
   Github,
   ChevronDown,
   Smartphone,
-  Sparkles,
-  BookOpen,
-  Coffee,
-  Footprints,
 } from "lucide-react";
 
 function Logo({ light = false }: { light?: boolean }) {
@@ -284,7 +281,7 @@ export default function Home() {
         <section className="hero section-width">
           <div className="hero-copy">
             <div className="eyebrow">
-              <span className="live-dot" /> LESS SCREEN. MORE LIFE.
+              <span className="live-dot" /> MORE TIME FOR WHAT MATTERS.
             </div>
             <h1>
               Your day,
@@ -293,12 +290,12 @@ export default function Home() {
               <span className="headline-star">✳</span>
             </h1>
             <p>
-              There’s a whole life outside your screen.
-              <br className="desktop-break" /> Screenly helps you get back to it.
+              More room for the things you meant to do. Screenly helps you set app limits—and stick
+              to them. Put money behind your commitment. Stay under and keep it.
             </p>
             <div className="hero-actions">
               <button className="button" onClick={start}>
-                Take back your time <ArrowUpRight size={18} />
+                Make room for your day <ArrowUpRight size={18} />
               </button>
               <a href="#how-it-works" className="text-link">
                 See how it works <ArrowRight size={16} />
@@ -319,53 +316,20 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="hero-art" aria-label="Less scrolling makes room for your life">
-            <div className="orbit orbit-outer" />
-            <div className="orbit orbit-inner" />
-            <div className="orbit-path" />
-            <span className="orbit-speck speck-1" />
-            <span className="orbit-speck speck-2" />
-            <div className="life-token reading">
-              <BookOpen size={21} />
-              <span>One more chapter.</span>
-            </div>
-            <div className="life-token walking">
-              <Footprints size={21} />
-              <span>The long way home.</span>
-            </div>
-            <div className="life-token coffee">
-              <Coffee size={20} />
-              <span>A proper catch-up.</span>
-            </div>
-            <div className="time-sun">
-              <span className="sun-rays">✺</span>
-              <div>
-                <small>MAKE ROOM FOR</small>
-                <strong>
-                  real life<span>.</span>
-                </strong>
-                <p>Not another hour of scrolling.</p>
-              </div>
-            </div>
-            <div className="art-caption">
-              <span className="caption-line" />
-              Your time looks better out here.
-            </div>
-            <Sparkles className="art-sparkle" size={26} />
-          </div>
+          <HeroVisual />
         </section>
         <section className="product-section section-width" id="product">
           <div className="section-kicker">
-            <span>SMALL LIMITS. BIG DIFFERENCE.</span>
+            <span>THREE WAYS TO MAKE YOUR TIME YOURS.</span>
             <span className="demo-label">
               <span className="live-dot" /> INTERACTIVE APP PREVIEW
             </span>
           </div>
           <div className="product-grid">
             {[
-              ["See where it goes.", "A little awareness goes a long way."],
-              ["Draw your own line.", "Limits that actually mean something."],
-              ["Make it a team sport.", "A little friendly competition helps."],
+              ["Know your time.", "See your day. Choose what deserves it."],
+              ["Make room for more.", "App limits that leave space for your plans."],
+              ["Better together.", "Shared goals. A little friendly competition."],
             ].map(([title, description], i) => (
               <article className={`product-panel panel-${i}`} key={title}>
                 <div className="product-title">
@@ -379,34 +343,34 @@ export default function Home() {
           </div>
           <div className="below-demos">
             <ShieldCheck size={15} />
-            <span>Built for your attention. Not to take more of it.</span>
+            <span>Your time, your limits, your people. All in one place.</span>
             <span className="demo-data">Sample data shown</span>
           </div>
         </section>
         <section className="problem section-width" id="why">
-          <div className="eyebrow">THE PROBLEM ISN’T YOU.</div>
+          <div className="eyebrow">A LITTLE MORE ROOM FOR REAL LIFE.</div>
           <div className="problem-grid">
             <h2>
-              Your phone is brilliant.
+              The evening you planned.
               <br />
-              <span className="serif">At keeping you on it.</span>
+              <span className="serif">With time to enjoy it.</span>
             </h2>
             <div className="problem-copy">
               <p>
-                A library, a newsroom, and everyone you know—in your pocket. Somewhere along the
-                way, it became the one thing competing with your evening.
+                One more chapter. A walk without rushing. A proper catch-up with someone you love.
+                You don’t need a different life—just a little more room for the one you have.
               </p>
               <p>
-                Apps are built to keep you scrolling. Screenly helps you put a little intention back
-                into the equation.
+                Keep the apps you enjoy. Decide how much of your day they get. Screenly brings your
+                time, your limits, and your people together so your plans have a place to start.
               </p>
               <a href="#how-it-works" className="text-link">
-                Let’s change the deal <ArrowUpRight size={17} />
+                Make a little room <ArrowUpRight size={17} />
               </a>
             </div>
           </div>
           <div className="story-strip">
-            <span>Less “just five more minutes.”</span>
+            <span>More “one more chapter.”</span>
             <span className="mini-star">✳</span>
             <span>More “that was a good day.”</span>
           </div>
@@ -415,7 +379,7 @@ export default function Home() {
           <div className="section-width commit-inner">
             <div className="commit-heading">
               <div>
-                <div className="eyebrow">A BETTER PLAN THAN WILLPOWER.</div>
+                <div className="eyebrow">GIVE YOUR GOOD INTENTIONS SOME BACKUP.</div>
                 <h2>
                   Put your money
                   <br />
@@ -423,30 +387,31 @@ export default function Home() {
                 </h2>
               </div>
               <p>
-                Not another reminder you’ll swipe away.
-                <br />A commitment to the version of you
+                A little accountability for the plans you care about.
                 <br />
-                that wanted to stop.
+                Choose your limits. Back them with a commitment.
+                <br />
+                Keep your time—and your money.
               </p>
             </div>
             <div className="steps">
               {[
                 [
                   "01",
-                  "Pick your leaks.",
-                  "Choose the apps stealing your evenings. Set a limit that works for your life.",
+                  "Choose your space.",
+                  "Choose the apps you want limits for. Leave room for the things you’re looking forward to.",
                   Smartphone,
                 ],
                 [
                   "02",
-                  "Put money on it.",
+                  "Back your intention.",
                   "Choose an amount you’d rather keep. Give your good intentions a little weight.",
                   ShieldCheck,
                 ],
                 [
                   "03",
-                  "Keep your word.",
-                  "Stay under and keep every cent. Break your limit and your commitment kicks in.",
+                  "Keep it yours.",
+                  "Stay within your limits and keep every cent. Go over, and you risk losing the amount you committed.",
                   Check,
                 ],
               ].map(([num, title, text, Icon]) => (
@@ -464,7 +429,7 @@ export default function Home() {
               <button className="button lime-button" onClick={start}>
                 Set your first limit <ArrowUpRight size={17} />
               </button>
-              <span>A small commitment. A little more control.</span>
+              <span>Your choice. Your commitment. More room for your day.</span>
             </div>
           </div>
         </section>
@@ -481,7 +446,7 @@ export default function Home() {
             </span>
           </div>
           <div className="science-copy">
-            <div className="eyebrow">BEHAVIORAL SCIENCE, NOT GUILT.</div>
+            <div className="eyebrow">MAKE TOMORROW’S CHOICE EASIER, TODAY.</div>
             <h2>
               Make your future self
               <br />
@@ -489,8 +454,8 @@ export default function Home() {
             </h2>
             <p>
               Behavioral scientists call it a <strong>commitment device</strong>: a choice you make
-              today to help you follow through tomorrow. Adding a real consequence can make “I’ll
-              stop soon” a little less negotiable.
+              today to help you follow through tomorrow. Adding a real consequence can give the
+              goals you care about a little extra support.
             </p>
             <a
               href="https://www.annualreviews.org/doi/10.1146/annurev.economics.102308.124324"
@@ -533,14 +498,14 @@ export default function Home() {
           <span className="final-star">✳</span>
           <div className="eyebrow">YOUR TIME IS YOURS.</div>
           <h2>
-            Go make a little
+            What would you do
             <br />
-            <span className="serif">more of your day.</span>
+            <span className="serif">with a little more time.</span>
           </h2>
           <button className="button" onClick={start}>
             Get started with Screenly <ArrowUpRight size={17} />
           </button>
-          <p>Start free. Set up in two minutes. Then put your phone down.</p>
+          <p>Start free. Start with one app. Make room for something you care about.</p>
         </section>
       </main>
       <footer className="section-width">
@@ -561,11 +526,7 @@ export default function Home() {
           <a href="#top">Back to top ↑</a>
         </div>
       </footer>
-      <dialog
-        ref={dialog}
-        onCancel={() => setModal(null)}
-        className="app-dialog"
-      >
+      <dialog ref={dialog} onCancel={() => setModal(null)} className="app-dialog">
         <button className="close-dialog" onClick={() => setModal(null)} aria-label="Close dialog">
           <X size={20} />
         </button>
